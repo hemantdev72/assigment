@@ -1,0 +1,120 @@
+.section{
+    width: 1024px;
+    margin: 0 auto;
+    .title{
+        width: 100%;
+        height: 155px;
+        .title-heading{
+            font-size: 48px;
+            line-height: 60px;
+            color:#2c384a;
+            font-weight: 400;
+            padding-top: 50px;
+        }
+    }
+}
+
+.title-info{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding:10px 0;
+    border-top: 1px solid #e1e4e6;
+    border-bottom: 1px solid #e1e4e6;
+    justify-content: space-between;
+    .right-info{
+        display: flex;
+        align-items: center;
+        gap:20px;
+    }
+    .info{
+        font-size: 13px;
+        font-weight: 400;
+        color:#4b5665;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.info span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.info p {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+.links-menu{
+margin-top: 40px;
+gap:20px;
+    .links{
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: white;
+    margin-top: 300px;
+    color:#4b5665;
+    font-size: 13px;
+    font-weight: 400;
+    padding:10px 10px;
+    margin-right: 20px;
+    
+}
+}
+
+
+
+.bread-crumbs {
+    margin:25px 0;
+    .crumbs {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        font-size: 14px;
+        gap:10px;
+        color:#5c6874;
+        .fa-icon {
+          margin-right: 5px; 
+        }
+      }
+    }
+  }
+  
+
+.posts{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.badge{
+  position: absolute;
+  width: 136px;
+  height: 34px;
+  background-color: #ff7724;
+  color:white;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 8px 8px 0;
+  justify-content: space-between;
+  padding: 0 5px;
+  top:-15px;
+  .badge-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .badge-icon{
+    height: 20px;
+    width: 20px;
+  }
+}
