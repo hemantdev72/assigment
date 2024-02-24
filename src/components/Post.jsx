@@ -76,6 +76,7 @@ function Post({ no, heading1, desc1, desc2, rating, rate, star, isNew }) {
             emptySymbol={<span className="empty-star">&#9734;</span>}
             fullSymbol={<span className="full-star">&#9733;</span>}
             readonly
+            className="star-rating"
           />
         </div>
         <button className="rating-btn">View</button>

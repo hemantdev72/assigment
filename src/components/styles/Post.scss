@@ -1,9 +1,8 @@
 .post-sec{
     position: relative;
     width: 100%;
-    // height: 255px;
-    min-height: 255px;
-    background-color: rgba(255, 10, 10, 0.63);
+    min-height: 120px;
+    background-color: white;
     display: flex;
     align-items: center;
     border-radius: 12px;
@@ -12,26 +11,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: yellow;
+        img{
+            width: 80%;
+        }
     }
     .post-desc{
-        background-color: #4995e0;
+       
         width: 50%;
         .desc-body{
-            font-size: 16px;
+            font-size: 9px;
             font-weight: 400;
             color:#4b5665;
-            line-height: 24px;
+            line-height: 13px;
         }
         .show-btn{
             background-color: transparent;
             outline: none;
             border:none;
             color:#1b88f4;
-            font-size: 16px;
+            font-size: 9px;
             font-weight: 400;
             line-height: 24px;
-            margin-top: 30px;
+            margin-top: 10px;
             display: flex;
             align-items: center;
             span {
@@ -42,17 +43,19 @@
         }
     }
     .post-rating{
-        background-color: greenyellow;
+       
         width: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 255px;
-     
+        height: 100%;
+        position: absolute;
+        top:0;
+        right: 0;
         .rating-top{
-            width: 135px;
-            height:118px;
+            width: 70px;
+            height:70px;
             background-color: #f3f9ff;
             border-radius: 0px 0px 12px 12px;
             display: flex;
@@ -60,33 +63,34 @@
             align-items: center;
             justify-content: space-between;
             .rating-no{
-                font-size: 32px;
+                font-size: 15px;
                 font-weight: 400;
                 color: #074786;
             }
             .rating-text{
                 color:#074786;
-                font-size: 14px;
+                font-size: 10px;
             }
         }
         .rating-btn{
-            height: 48px;
-            width: 232px;
+            height: 20px;
+            width: 80px;
             background-color: #1b88f4;
             border:none;
             outline:none;
             color:white;
             border-radius: 12px;
             margin-bottom: 10px;
+            font-size: 9px;
         }
     }
 }
 
 .desc-heading{
-    font-size: 16px;
+    font-size: 11px;
     font-weight: 700;
     color:#2c384a;
-    line-height: 24px;
+    line-height: 13px;
 }
 
 .description{
@@ -95,7 +99,7 @@
 }
 
 .star-rating {
-    font-size: 24px; /* Set the star size */
+    font-size: 10px; /* Set the star size */
   }
   
   .empty-star {
@@ -111,51 +115,52 @@
 
 .post-no{
     position: absolute;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 28px;
     color:#626e79;
-    width: 44px;
-    height: 44px;
+    width: 20px;
+    height: 20px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     top:32px;
-    left:-22px;
+    left:-10px;
 }
 
 .desc2{
     background-color: #fff4ed;
-    height: 116px;
-    width: 480px;
+    height: 60px;
+    width: 120px;
     border-radius: 12px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 5px;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap:5px;
     justify-content: center;
-    padding:0 10px;
+    padding:0 8px;
     .desc2-no{
-        font-size: 15px;
+        font-size: 8px;
+        white-space: nowrap;
         color:#4b5665;
         .desc2-rate{
-            height: 28px;
-            width: 40px;
+            height: 20px;
+            width: 22px;
             background-color: white;
             border-radius: 4px;
             color:#1b88f4;
-            font-size: 16px;
+            font-size: 9px;
             padding: 2px 5px;
-            margin-right: 4px;
+            margin-right: 0px;
         }
     }
 }
 
 .desc2-title{
-    font-size: 16px;
+    font-size: 11px;
     line-height: 24px;
     color:#2c384a;
     font-weight: 400;
@@ -163,7 +168,7 @@
 
 .desc-input{
     .desc2-menu{
-        font-size: 15px;
+        font-size: 10px;
         color:#4b5665;
         .desc2-tick{
            margin-right: 10px;
@@ -175,3 +180,548 @@
     }
 }
 
+@media (min-width:500px){
+    .post-sec{
+        min-height: 180px;
+        background-color: white;
+        .post-img{
+            width: 25%;
+            img{
+                width: 50%;
+            }
+        }
+        .post-desc{
+            .desc-body{
+                font-size: 12px;
+                font-weight: 400;
+                color:#4b5665;
+                line-height: 15px;
+            }
+            .show-btn{
+                background-color: transparent;
+                outline: none;
+                border:none;
+                color:#1b88f4;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                span {
+                    margin-left: 3px; // Adjust the margin as needed
+                    display: flex;
+                    align-items: center;
+                  }
+            }
+        }
+        .post-rating{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            position: absolute;
+            top:0;
+            right: 0;
+            .rating-top{
+                width: 80px;
+                height:70px;
+                background-color: #f3f9ff;
+                border-radius: 0px 0px 12px 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                gap:5px;
+                .rating-no{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #074786;
+                }
+                .rating-text{
+                    color:#074786;
+                    font-size: 10px;
+                }
+            }
+            .rating-btn{
+                height: 25px;
+                width: 90px;
+                background-color: #1b88f4;
+                border:none;
+                outline:none;
+                color:white;
+                border-radius: 12px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    .desc-heading{
+        font-size: 12px;
+        font-weight: 700;
+        color:#2c384a;
+        line-height: 20px;
+    }
+    
+    .description{
+        margin-left: 15px;
+        
+    }
+    
+    .star-rating {
+        font-size: 15px; /* Set the star size */
+      }
+      
+      .empty-star {
+        color: #c0c0c0; /* Set the color for unfilled stars */
+        /* Additional styles for unfilled stars */
+      }
+      
+      .full-star {
+        color: #ffd700; /* Set the star color */
+        /* Additional styles for filled stars */
+      }
+    
+    
+    .post-no{
+        position: absolute;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        color:#626e79;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        top:30px;
+        left:-15px;
+    }
+    
+    .desc2{
+        background-color: #fff4ed;
+        height: 70px;
+        width: 180px;
+        border-radius: 12px;
+        margin-left: 20px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+        justify-content: center;
+        padding:5px 10px;
+        .desc2-no{
+            font-size: 11px;
+            color:#4b5665;
+            .desc2-rate{
+                height: 18px;
+                width: 32px;
+                background-color: white;
+                border-radius: 4px;
+                color:#1b88f4;
+                font-size: 11px;
+                padding: 2px 5px;
+                margin-right: 4px;
+            }
+        }
+    }
+    
+    .desc2-title{
+        font-size: 11px;
+        line-height: 24px;
+        color:#2c384a;
+        font-weight: 400;
+    }
+    
+    .desc-input{
+        .desc2-menu{
+            font-size: 11px;
+            color:#4b5665;
+            .desc2-tick{
+               margin-right: 10px;
+            
+                color:
+                #4995e0;
+                
+            }
+        }
+    }
+    
+    
+}
+
+@media (min-width:700px){
+    .post-sec{
+        
+        position: relative;
+        width: 100%;
+        
+        // height: 255px;
+        min-height: 200px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+        .post-img{
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50%;
+            }
+        }
+        .post-desc{
+           padding:5px;
+            width: 50%;
+            .desc-body{
+                font-size: 12px;
+                font-weight: 400;
+                color:#4b5665;
+                line-height: 16px;
+            }
+            .show-btn{
+                background-color: transparent;
+                outline: none;
+                border:none;
+                color:#1b88f4;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                span {
+                    margin-left: 3px; // Adjust the margin as needed
+                    display: flex;
+                    align-items: center;
+                  }
+            }
+        }
+        .post-rating{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            position: absolute;
+            top:0;
+            right: 0;
+            .rating-top{
+                width: 100px;
+                height:90px;
+                background-color: #f3f9ff;
+                border-radius: 0px 0px 12px 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                gap:5px;
+                .rating-no{
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: #074786;
+                }
+                .rating-text{
+                    color:#074786;
+                    font-size: 10px;
+                }
+            }
+            .rating-btn{
+                height: 30px;
+                width: 120px;
+                background-color: #1b88f4;
+                border:none;
+                outline:none;
+                color:white;
+                border-radius: 12px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    .desc-heading{
+        font-size: 14px;
+        font-weight: 700;
+        color:#2c384a;
+        line-height: 24px;
+    }
+    
+    .description{
+        margin-left: 15px;
+        
+    }
+    
+    .star-rating {
+        font-size: 20px; /* Set the star size */
+      }
+      
+      .empty-star {
+        color: #c0c0c0; /* Set the color for unfilled stars */
+        /* Additional styles for unfilled stars */
+      }
+      
+      .full-star {
+        color: #ffd700; /* Set the star color */
+        /* Additional styles for filled stars */
+      }
+    
+    
+    .post-no{
+        position: absolute;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        color:#626e79;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        top:30px;
+        left:-15px;
+    }
+    
+    .desc2{
+        background-color: #fff4ed;
+        height: 80px;
+        width: 250px;
+        border-radius: 12px;
+        margin-left: 20px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+        justify-content: center;
+        padding:5px 10px;
+        .desc2-no{
+            font-size: 12px;
+            color:#4b5665;
+            .desc2-rate{
+                height: 20px;
+                width: 35px;
+                background-color: white;
+                border-radius: 4px;
+                color:#1b88f4;
+                font-size: 13px;
+                padding: 2px 5px;
+                margin-right: 4px;
+            }
+        }
+    }
+    
+    .desc2-title{
+        font-size: 13px;
+        line-height: 24px;
+        color:#2c384a;
+        font-weight: 400;
+    }
+    
+    .desc-input{
+        .desc2-menu{
+            font-size: 12px;
+            color:#4b5665;
+            .desc2-tick{
+               margin-right: 10px;
+            
+                color:
+                #4995e0;
+                
+            }
+        }
+    }
+    
+    
+}
+
+
+@media (min-width:900px){
+    .post-sec{
+        position: relative;
+        width: 100%;
+        min-height: 255px;
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+        .post-img{
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50%;
+            }   
+        }
+        .post-desc{
+           
+            width: 50%;
+            .desc-body{
+                font-size: 16px;
+                font-weight: 400;
+                color:#4b5665;
+                line-height: 24px;
+            }
+            .show-btn{
+                background-color: transparent;
+                outline: none;
+                border:none;
+                color:#1b88f4;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                span {
+                    margin-left: 5px; // Adjust the margin as needed
+                    display: flex;
+                    align-items: center;
+                  }
+            }
+        }
+        .post-rating{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            position: absolute;
+            top:0;
+            right: 0;
+            .rating-top{
+                width: 135px;
+                height:118px;
+                background-color: #f3f9ff;
+                border-radius: 0px 0px 12px 12px;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                // justify-content: space-between;
+                .rating-no{
+                    font-size: 32px;
+                    font-weight: 400;
+                    color: #074786;
+                }
+                .rating-text{
+                    color:#074786;
+                    font-size: 14px;
+                }
+            }
+            .rating-btn{
+                height: 40px;
+                width: 100%;
+                background-color: #1b88f4;
+                border:none;
+                font-size: 16px;
+                font-weight: 400;
+                outline:none;
+                color:white;
+                border-radius: 12px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    .desc-heading{
+        font-size: 16px;
+        font-weight: 700;
+        color:#2c384a;
+        line-height: 24px;
+    }
+    
+    .description{
+        margin-left: 15px;
+        
+    }
+    
+    .star-rating {
+        font-size: 24px; /* Set the star size */
+      }
+      
+      .empty-star {
+        color: #c0c0c0; /* Set the color for unfilled stars */
+        /* Additional styles for unfilled stars */
+      }
+      
+      .full-star {
+        color: #ffd700; /* Set the star color */
+        /* Additional styles for filled stars */
+      }
+    
+    
+    .post-no{
+        position: absolute;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        color:#626e79;
+        width: 44px;
+        height: 44px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        top:32px;
+        left:-22px;
+    }
+    
+    .desc2{
+        background-color: #fff4ed;
+        height: 116px;
+        width: 480px;
+        border-radius: 12px;
+        margin-left: 20px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        justify-content: center;
+        padding:0 10px;
+        .desc2-no{
+            font-size: 15px;
+            color:#4b5665;
+            .desc2-rate{
+                height: 28px;
+                width: 40px;
+                background-color: white;
+                border-radius: 4px;
+                color:#1b88f4;
+                font-size: 16px;
+                padding: 2px 5px;
+                margin-right: 4px;
+            }
+        }
+    }
+    
+    .desc2-title{
+        font-size: 16px;
+        line-height: 24px;
+        color:#2c384a;
+        font-weight: 400;
+    }
+    
+    .desc-input{
+        .desc2-menu{
+            font-size: 15px;
+            color:#4b5665;
+            .desc2-tick{
+               margin-right: 10px;
+            
+                color:
+                #4995e0;
+                
+            }
+        }
+    }
+    
+    
+}

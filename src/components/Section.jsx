@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Post from "./Post";
 import "./styles/Section.scss";
+import Related from "./Related";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
@@ -87,6 +88,21 @@ function Section() {
             isNew={index === 0 || index === 1}
           />
         ))}
+      </div>
+      <h2 className="related-deals">Related deals you might like for</h2>
+      <div className="related">
+        <Related />
+        <Related />
+        <Related />
+      </div>
+      <div className="signup-card">
+        <p className="sign-info">
+          Sign up and get exclusive <br /> special deals
+        </p>
+        <div className="signup-letter">
+          <input type="text" className="signup-input" />
+          <button className="signup-btn">Sign Up</button>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,334 @@
+.related-card{
+    background-color: white;
+    width: 33%;
+    padding:20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    .related-img{
+        align-self: center;
+        width: 100%;
+    }
+    .related-offers{
+        margin-top: 30px;
+        display: flex;
+        gap:4px;
+        .offer{
+            font-size: 8px;
+            font-weight: 400;
+            color:#074786;
+            background-color: #F2F4F7;
+            padding:2px 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+       
+    }
+    .related-head{
+        text-align: center;
+        // background-color: #074786;
+        width: 100%;
+        font-size: 8px;
+        font-weight: 700;
+        color:#626E79;
+        margin: 5px 0; 
+    }
+    .related-desc{
+        font-size: 7px;
+        line-height: 10px;
+        color:#626E79;
+        margin-bottom: 10px;
+    }
+    .prices-info{
+        display: flex;
+        margin-left: -10px;
+        // background-color: red;
+        align-items: center;
+        justify-content: flex-start;
+        gap:2px;
+        .new-price{
+            font-size: 9px;
+            font-weight: 400;
+            color:#5C6874;
+        }
+        .old-price{
+            font-size: 8px;
+            line-height: 20px;
+            font-weight: 400;
+            color:#9FA9B3;
+            text-decoration: line-through;
+        }
+        .price-off{ 
+            font-size: 6px;
+            line-height: 20px;
+            color:#EF4C5D;
+        }
+    }
+    .related-btn{
+        width: 100%;
+        background-color: #1B88F4;
+        padding: 7px 0;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        color:white;
+        font-size: 8px;
+        font-weight: 400;
+        margin:4px 0;
+    }
+}
+
+@media (min-width:500px){
+    .related-card{
+        background-color: white;
+       
+        width: 30%;
+        margin: 0 auto;
+        padding:10px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        .related-img{
+            align-self: center;
+            width: 100%;
+        }
+        .related-offers{
+            margin-top: 8px;
+            display: flex;
+            gap:5px;
+            .offer{
+                font-size: 8px;
+                font-weight: 400;
+                white-space: nowrap;
+                color:#074786;
+                background-color: #F2F4F7;
+                padding:5px 7px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+            }
+           
+        }
+        .related-head{
+            text-align: center;
+            // background-color: #074786;
+            width: 100%;
+            font-size: 11px;
+            font-weight: 700;
+            color:#626E79;
+            margin: 6px 0; 
+        }
+        .related-desc{
+            font-size: 10px;
+            line-height: 15px;
+            color:#626E79;
+            margin-bottom: 10px;
+        }
+        .prices-info{
+            display: flex;
+            align-items: center;
+            gap:5px;
+            .new-price{
+                font-size: 11px;
+                font-weight: 400;
+                color:#5C6874;
+            }
+            .old-price{
+                font-size: 9px;
+                line-height: 20px;
+                font-weight: 400;
+                color:#9FA9B3;
+            }
+            .price-off{ 
+                font-size: 8px;
+                line-height: 20px;
+                color:#EF4C5D;
+            }
+        }
+        .related-btn{
+            width: 100%;
+            background-color: #1B88F4;
+            padding: 6px 0;
+            outline: none;
+            border: none;
+            border-radius: 12px;
+            color:white;
+            font-size: 11px;
+            font-weight: 400;
+            margin:8px 0;
+        }
+    }
+}
+
+@media (min-width:700px){
+    .related-card{
+        background-color: white;
+        // background-color: yellow;
+        width: 30%;
+        margin: 0 auto;
+        padding:20px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        .related-img{
+            align-self: center;
+        }
+        .related-offers{
+            margin-top: 10px;
+            display: flex;
+            gap:10px;
+            .offer{
+                font-size: 10px;
+                font-weight: 400;
+                white-space: nowrap;
+                color:#074786;
+                background-color: #F2F4F7;
+                padding:5px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+            }
+           
+        }
+        .related-head{
+            text-align: center;
+            // background-color: #074786;
+            width: 100%;
+            font-size: 12px;
+            font-weight: 700;
+            color:#626E79;
+            margin: 8px 0; 
+        }
+        .related-desc{
+            font-size: 11px;
+            line-height: 15px;
+            color:#626E79;
+            margin-bottom: 10px;
+        }
+        .prices-info{
+            display: flex;
+            align-items: center;
+            gap:5px;
+            .new-price{
+                font-size: 15px;
+                font-weight: 400;
+                color:#5C6874;
+            }
+            .old-price{
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 400;
+                color:#9FA9B3;
+            }
+            .price-off{ 
+                font-size: 10px;
+                line-height: 20px;
+                color:#EF4C5D;
+            }
+        }
+        .related-btn{
+            width: 100%;
+            background-color: #1B88F4;
+            padding: 8px 0;
+            outline: none;
+            border: none;
+            border-radius: 12px;
+            color:white;
+            font-size: 12px;
+            font-weight: 400;
+            margin:8px 0;
+        }
+    }
+}
+
+@media (min-width:900px){
+    .related-card{
+        background-color: white;
+        width: 33%;
+        padding:20px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        .related-img{
+            align-self: center;
+            width: 40%;
+        }
+        .related-offers{
+            margin-top: 50px;
+            display: flex;
+            gap:15px;
+            .offer{
+                font-size: 18px;
+                font-weight: 400;
+                color:#074786;
+                background-color: #F2F4F7;
+                padding:5px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+            }
+           
+        }
+        .related-head{
+            text-align: center;
+            // background-color: #074786;
+            width: 100%;
+            font-size: 19px;
+            font-weight: 700;
+            color:#626E79;
+            margin: 8px 0; 
+        }
+        .related-desc{
+            font-size: 18px;
+            line-height: 28px;
+            color:#626E79;
+            margin-bottom: 10px;
+        }
+        .prices-info{
+            display: flex;
+            align-items: center;
+            gap:15px;
+            .new-price{
+                font-size: 20px;
+                font-weight: 400;
+                color:#5C6874;
+            }
+            .old-price{
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                color:#9FA9B3;
+            }
+            .price-off{ 
+                font-size: 13px;
+                line-height: 20px;
+                color:#EF4C5D;
+            }
+        }
+        .related-btn{
+            width: 100%;
+            background-color: #1B88F4;
+            padding: 18px 0;
+            outline: none;
+            border: none;
+            border-radius: 12px;
+            color:white;
+            font-size: 16px;
+            font-weight: 400;
+            margin:8px 0;
+        }
+    }
+}

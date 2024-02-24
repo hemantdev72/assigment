@@ -1,22 +1,22 @@
 .header {
-    height: 64px;
+    height: 40px;
     width: 100%;
     background-color: #212731;
     .nav-menu {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 60px;
+      gap: 10px;
       height: 100%;
       .nav-items {
-        font-size: 14px;
+        font-size: 11px;
         color: #d1d6da;
         font-weight: 400;
       }
       .nav-search {
         position: relative;
-        height: 37px;
-        width: 258px;
+        height: 22px;
+        width: 120px;
         border-radius: 8px;
         background-color: #ffffff;
         .nav-input {
@@ -24,13 +24,105 @@
           background-color: transparent;
           border:none;
           outline:none;
+
               }
         .search-icon {
             position: relative;
+            top:2px;
+          height: 12px;
+          width: 12px;
+        }
+      }
+    }
+}
+
+@media (min-width:600px){
+  .header {
+    height: 50px;
+    .nav-menu {
+      gap: 15px;
+      height: 100%;
+      .nav-items {
+        font-size: 12px;
+      }
+      .nav-search {
+        position: relative;
+        height: 25px;
+        width: 180px;
+        .nav-input {
+            width: calc(100% - 24px);
+          background-color: transparent;
+          border:none;
+          outline:none;
+
+              }
+        .search-icon {
+            top:4px;
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+}
+}
+
+@media (min-width:900px){
+  .header {
+    height: 55px;
+    .nav-menu {
+      gap: 25px;
+      height: 100%;
+      .nav-items {
+        font-size: 13px;
+      }
+      .nav-search {
+        position: relative;
+        height: 30px;
+        width: 200px;
+        .nav-input {
+            width: calc(100% - 24px);
+          background-color: transparent;
+          border:none;
+          outline:none;
+
+              }
+        .search-icon {
+            top:4px;
+          height: 22px;
+          width: 22px;
+        }
+      }
+    }
+}
+}
+
+
+@media (min-width:1200px){
+  .header {
+    height: 64px;
+    .nav-menu {
+      gap: 60px;
+      height: 100%;
+      .nav-items {
+        font-size: 14px;
+      }
+      .nav-search {
+        position: relative;
+        height: 37px;
+        width: 258px;
+        .nav-input {
+            width: calc(100% - 24px);
+          background-color: transparent;
+          border:none;
+          outline:none;
+
+              }
+        .search-icon {
             top:5px;
           height: 24px;
           width: 24px;
         }
       }
     }
+}
 }
